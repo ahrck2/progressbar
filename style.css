@@ -1,0 +1,42 @@
+*{
+  font-family: '{fontName}', sans-serif;
+  font-weight: {fontWeight};
+}
+
+.main-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.legend {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1px;
+}
+
+.progress-label {
+  font-size: 25px;
+  color: white;
+}
+
+.meter {
+  display: flex;
+  justify-content: space-between;
+  gap: 2px; /* Espaçamento entre os segmentos */
+  background-color: none;
+  height: 8px;
+  overflow: hidden;
+}
+
+.meter .segment {
+  flex: 1;
+  background-color: rgba(0,0,0,0.1);
+  height: 100%;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.meter .segment.filled {
+  background-color: white;
+}
